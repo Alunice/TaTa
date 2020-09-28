@@ -1,0 +1,14 @@
+E:\TestDemos\WinformTest\WinformTest\bin\Debug\WinformTest.exe.config
+E:\TestDemos\WinformTest\WinformTest\bin\Debug\WinformTest.exe
+E:\TestDemos\WinformTest\WinformTest\bin\Debug\WinformTest.pdb
+E:\TestDemos\WinformTest\WinformTest\obj\Debug\WinformTest.csprojAssemblyReference.cache
+E:\TestDemos\WinformTest\WinformTest\obj\Debug\WinformTest.Properties.Resources.resources
+E:\TestDemos\WinformTest\WinformTest\obj\Debug\WinformTest.csproj.GenerateResource.cache
+E:\TestDemos\WinformTest\WinformTest\obj\Debug\WinformTest.csproj.CoreCompileInputs.cache
+E:\TestDemos\WinformTest\WinformTest\obj\Debug\WinformTest.exe
+E:\TestDemos\WinformTest\WinformTest\obj\Debug\WinformTest.pdb
+E:\TestDemos\WinformTest\WinformTest\bin\Debug\MetroFramework.Design.dll
+E:\TestDemos\WinformTest\WinformTest\bin\Debug\MetroFramework.dll
+E:\TestDemos\WinformTest\WinformTest\bin\Debug\MetroFramework.Fonts.dll
+E:\TestDemos\WinformTest\WinformTest\obj\Debug\WinformTest.CSVToObj.resources
+E:\TestDemos\WinformTest\WinformTest\obj\Debug\WinformTest.csproj.CopyComplete
