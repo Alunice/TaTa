@@ -32,8 +32,6 @@ Open the project's manifest.json file.json,you can delcare Git dependencies in i
 		...
 	}
 }
-
-
 ```
 You can check the official document for details ([upm-git](https://docs.unity3d.com/Manual/upm-git.html)).
 For some reason the unity hub doesn't support git well,so you can choose import form disk.Here is the official document ([upm-localpath](https://docs.unity3d.com/Manual/upm-localpath.html)).
