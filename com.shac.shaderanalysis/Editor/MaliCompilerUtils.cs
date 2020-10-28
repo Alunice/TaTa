@@ -75,7 +75,7 @@ public static class MaliCompilerUtils
             {
                 endFlag--;
             }
-            if (fileDataLine.Contains("#ifdef"))
+            if (fileDataLine.Contains("#if"))
             {
                 endFlag++;
             }
