@@ -1,4 +1,4 @@
-#Thumbnail Render Script
+# Thumbnail Render Script
 
 写在最前面：参考 https://zhuanlan.zhihu.com/p/80361232 文章写的批量生成缩略图的脚本
 
