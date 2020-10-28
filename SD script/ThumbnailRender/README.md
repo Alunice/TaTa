@@ -33,7 +33,7 @@ def printSelectedNodesInfo(nodes):
 ```
 因为本人也是刚开始学习SD，接下来的分析可能有不对的地方~
 使用definition好像只能获取节点暴露出来的接口，也就是在sbstance player中打开，可以编辑的那些参数。我调试了几个sbsar文件，只有SDPropertyCategory.Input这个filter下获取到了若干properties，与player中打开看到的参数一致。
-但我希望获取到的是SDPropertyCategory.Output下的诸如basecolor,normal等参数，用改方法得到的是一个空的SDARRAY。
+但我希望获取到的是SDPropertyCategory.Output下的诸如basecolor,normal等参数，用该方法得到的是一个空的SDARRAY。
 经过文档查阅，发现SDNode节点本身也有getProperties这个方法，将代码改为：
 ```
 inprops = materialNode.getProperties(SDPropertyCategory.Output)
