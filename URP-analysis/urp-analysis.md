@@ -2,7 +2,7 @@
 
 URP是unity推出的，用于替代传统build-in管线。该篇为阅读源码的笔记~
 
-URP的入口文件为UniversalRenderPiplineAsset.cs,在该文件中，进行了一系列初始化操作，默认渲染的render为继承至ScriptableRenderer的ForwardRenderer，初始化默认渲染管线UniversalRenderPipeline。
+URP的入口文件为UniversalRenderPiplineAsset.cs,在该文件中，进行了一系列初始化操作,核心是CreatePipeline函数，创建了渲染管线，默认渲染的render为继承至ScriptableRenderer的ForwardRenderer，初始化默认渲染管线UniversalRenderPipeline。
 
 # UniversalRenderPipeline
 
