@@ -275,7 +275,7 @@ col.a = smoothstep(0.5, 0.5 - _SmoothDelta , a1);
 
 SDF技术在卡渲相关资源的创作过程中，也起到了非常大的作用。
 
-<iframe height=540 width=960 src="./img/change.mp4" frameborder=0 allowfullscreen></iframe>
+<iframe height=540 width=960 src="https://github.com/Alunice/TaTa/tree/master/SDF/img/change.mp4" frameborder=0 allowfullscreen></iframe>
 
 这是卡通渲染时脸部阴影的制作方式，简单来说就是艺术家绘制好一些特定光线角度时的脸部阴影，然后通过SDF插值计算出中间过程，并将中间过程叠加到一张图上，通过简单的blur或者smooth操作实现平滑。
 
