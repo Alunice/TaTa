@@ -1,1 +1,1 @@
-This is Substance Designer python script
+This is Substance Designer python script and some format scripts
