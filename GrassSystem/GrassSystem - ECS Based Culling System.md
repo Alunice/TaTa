@@ -29,7 +29,7 @@ Demo还是使用的Hybrid，既然决定用ECS了，就用彻底嘛~
 
 ## Simple Grass System
 
-Hybrid的使用这边就不过多介绍了，不了解的小伙伴可以参考[这篇文章](https://www.lfzxb.top/unity-dots-using-ecs-create-gameplay/)。由于草海是在游戏运行时才会被实例化的，所以我们只需要准备好一个实例（包涵Mesh和Material），预生成或者加载进游戏时生成所有实例需要的position，rotation数据即可。
+Hybrid的使用这边就不过多介绍了，不了解的小伙伴可以参考[这篇文章](https://www.lfzxb.top/unity-dots-using-ecs-create-gameplay/)。由于草海是在游戏运行时才会被实例化的，所以我们只需要准备好一个实例（包含Mesh和Material），预生成或者加载进游戏时生成所有实例需要的position，rotation数据即可。
 
 ```
 public static List<float3>[] posList;

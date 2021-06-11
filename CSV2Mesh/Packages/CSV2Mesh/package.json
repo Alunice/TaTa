@@ -1,0 +1,12 @@
+{
+  "name": "com.igg.csv2mesh",
+  "displayName": "CSV2Mesh",
+  "version": "0.0.1",
+  "unity": "2019.1",
+  "unityRelease": "0a1",
+  "description": "Convert CSV Asset to Mesh.",
+  "category": "Tools",
+  "dependencies": {
+    "com.unity.formats.fbx": "4.0.1"
+  }
+}
