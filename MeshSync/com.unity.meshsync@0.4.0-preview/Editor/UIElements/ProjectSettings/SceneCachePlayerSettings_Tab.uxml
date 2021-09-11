@@ -1,0 +1,21 @@
+<UXML xmlns="UnityEngine.UIElements">
+    
+    <ScrollView name="SceneCachePlayerSettingsScrollView" show-vertical-scroller="true">
+
+        <VisualElement name="HeaderContainer" class="general-header-container">
+        </VisualElement>
+
+        <VisualElement name="Content" class="project-settings-content">
+
+            <VisualElement name="FieldContainer" class="project-settings-field-container">
+                <Label text="Scene Cache Output Path"/>
+                <TextField class="project-settings-path-field" name="OutputPathText"/>
+                <Button text="..." name="OutputPathSelectButton"/>
+            </VisualElement>
+            
+        </VisualElement>
+                
+    </ScrollView>
+
+        
+</UXML>
