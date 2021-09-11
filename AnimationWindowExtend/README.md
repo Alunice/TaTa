@@ -4,8 +4,6 @@ AutoHighlightAnimSelect 基于反射，实现对animation window功能扩展，�
 
 
 
----------------------------------------------
-
 # Manual
 
 AutoHighlightAnimSelect extend Animation Window function based on c# Reflection.Auto highlight the anim cuver bind with the bone selected in hierarchy.
