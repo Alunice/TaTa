@@ -86,11 +86,10 @@ namespace OukeUtils
 
             if (Selection.activeGameObject != null && _window != null)
             {
-                var selectPath = Selection.activeGameObject.transform.GetFullPath();
-                if(!selectPath.StartsWith("Bip001"))
-                    selectPath = selectPath.Substring(selectPath.IndexOf("/") + 1);
-                Debug.Log("find path : " + selectPath);
-
+                var animationPlayerObj = GetClosestAnimationPlayerComponentInParents(Selection.activeGameObject.transform);
+                var rootObj = animationPlayerObj ? animationPlayerObj.gameObject : null;
+                if (rootObj == null)
+                    return false;
 
                 var hierarchyNodeprop = _windowStateType.GetProperty("selectedHierarchyNodes", _flags);
                 var hierarchyNodeObj = hierarchyNodeprop.GetValue(_animStateObject) as IList;
@@ -107,17 +106,23 @@ namespace OukeUtils
                     if (hierarchyNodeType.IsAssignableFrom(listitem.GetType()))
                     {
                         var path = hierarchyNodeType.GetField("path", _flags).GetValue(listitem) as String;
-                        if (path == selectPath)
+                        if (path == null)
+                            continue;
+                        var t = rootObj.transform.Find(path);
+                        if ( t != null && rootObj!= null && animationPlayerObj == GetClosestAnimationPlayerComponentInParents(t))
                         {
-                            nodeID = (int)hierarchyNodeType.GetProperty("id", _flags).GetValue(listitem);
-                            Debug.Log("catch ID  " + nodeID);
-                            return true;
+                            if(t.gameObject == Selection.activeGameObject)
+                            {
+                                nodeID = (int)hierarchyNodeType.GetProperty("id", _flags).GetValue(listitem);
+                                Debug.Log("catch ID  " + nodeID);
+                                return true;
+                            } 
                         }
                     }
                 }
 
             }
-
+            Debug.Log("Not Find! " + nodeID);
             return false;
         }
 
@@ -163,6 +168,30 @@ namespace OukeUtils
             }
 
         }
+
+        public static Component GetClosestAnimationPlayerComponentInParents(Transform tr)
+        {
+            while (true)
+            {
+                Animator animator = tr.GetComponent<Animator>();
+                if (animator != null)
+                {
+                    return animator;
+                }
+                Animation animation = tr.GetComponent<Animation>();
+                if (animation != null)
+                {
+                    return animation;
+                }
+                if (tr == tr.root)
+                {
+                    break;
+                }
+                tr = tr.parent;
+            }
+            return null;
+        }
+
 
     }
 }
